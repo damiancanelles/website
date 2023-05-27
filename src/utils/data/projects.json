@@ -1,0 +1,33 @@
+[
+    {
+        "name":"Roses Social Dashboard",
+        "description": "Develop the frontend of a app to mesure tha activity on social media related to the turism on the province of Roses in Spain",
+        "skills": ["typescrip", "react", "tailwind", "axios", "react query"],
+        "images": ["/assets/projects/roses/1.jpg", "/assets/projects/roses/2.jpg"]
+    },
+    {
+        "name":"Bus Pricing",
+        "description": "Develop a web app to book buses over Europe throw a contract with a software developer company",
+        "skills": ["javascript", "react", "material ui", "axios", "strapi", "postgres"],
+        "images": ["/assets/projects/buses/1.jpg", "/assets/projects/buses/2.jpg"]
+    },
+    {
+        "name":"Enjoy Cuba Airlines Admin System",
+        "description": "Develop the backend to a fligh booking system to a travel reservation agency system",
+        "skills": ["python", "django", "mysql"],
+        "images": ["/assets/projects/enjoy/1.png", "/assets/projects/enjoy/2.png"]
+    },
+    {
+        "name":"Automatic API Tester",
+        "description": "Develop a full stack web app to automate test of web services in a mexican company",
+        "skills": ["sql server", "react", "tailwind", "axios", "react query", "typescript", "python", "fast api"],
+        "images": ["/assets/projects/test/1.jpg", "/assets/projects/test/2.jpg"]
+    },
+    {
+        "name":"ISY",
+        "description": "Develop a app to make improve the university life of the ecuatorian young people ",
+        "skills": ["djando", "react", "microservice", "docker", "aws", "azure pipeline", "dynamodb"],
+        "images": ["/assets/projects/isy/1.jpg", "/assets/projects/isy/2.jpg"]
+    }
+
+]  

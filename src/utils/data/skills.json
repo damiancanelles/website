@@ -1,0 +1,51 @@
+[
+        {
+            "name": "Typescript",
+            "image": "/assets/skills/typescript.svg"
+        },
+        {
+            "name": "React",
+            "image": "/assets/skills/react.svg"
+        },
+        {
+            "name": "Node",
+            "image": "/assets/skills/node.svg"
+        },
+        {
+            "name": "Python",
+            "image": "/assets/skills/python.svg"
+        },
+        {
+            "name": "Django",
+            "image": "/assets/skills/django.svg"
+        },
+        {
+            "name": "SQL",
+            "image": "/assets/skills/sql.svg"
+        },
+        {
+            "name": "AWS",
+            "image": "/assets/skills/aws.svg"
+        },
+        {
+            "name": "Git",
+            "image": "/assets/skills/git.svg"
+        },
+        {
+            "name": "MongoDB",
+            "image": "/assets/skills/mongodb.svg"
+        },
+        {
+            "name": "DynamoDB",
+            "image": "/assets/skills/aws-dynamodb.svg"
+        },
+        {
+            "name": "Tailwind",
+            "image": "/assets/skills/tailwind.svg"
+        },
+        {
+            "name": "Heroku",
+            "image": "/assets/skills/heroku.svg"
+        }
+        
+]
