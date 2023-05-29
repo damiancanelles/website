@@ -1,15 +1,6 @@
 import Link from "next/link";
 
 export default function Navbar() {
-    const scrollToSection = (section_name: string) => {
-      const section = document.getElementById(section_name);
-      if (section) {
-        window.scrollTo({
-          top: section.offsetTop,
-          behavior: 'smooth',
-        });
-      }
-    };
 
     return (
         <nav className="bg-gray-900">
@@ -29,6 +20,11 @@ export default function Navbar() {
                   <Link legacyBehavior href="#resume">
                       <a className="nav-link text-gray-300 hover:text-white px-3 py-4 rounded-md text-sm font-medium">Resume</a>
                   </Link>
+                </div>
+              </div>
+              <div className="md:hidden">
+                <div className="text-gray-300 hover:text-white px-3 py-4 rounded-md text-sm font-medium">
+                  DC Portafolio
                 </div>
               </div>
             </div>

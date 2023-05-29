@@ -5,7 +5,7 @@ export default function Carousel() {
 
     return (
         <section id="projects">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-40 py-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-auto px-6 md:px-40 py-10 md:py-20">
                 <div className="col-span-full mb-4 text-4xl font-bold">Projects</div>
                 {projects.map((project, index) => (
                     <div key={index} className="bg-white p-4 shadow-md rounded-md">
