@@ -1,14 +1,38 @@
+"use client"
+
+import { motion } from 'framer-motion';
 import projects from '../utils/data/projects.json'
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function Carousel() {
+    const [display, setDisplay] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sectionElement = document.getElementById('projects');
+            
+            if (sectionElement) {
+                const sectionRect = sectionElement.getBoundingClientRect();
+                const threshold = 100;
+                if (sectionRect.top - threshold <= window.innerHeight) {
+                  setDisplay(true)
+                }
+              }
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+
+    },[])
 
     return (
         <section id="projects">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-auto px-6 md:px-40 py-10 md:py-20">
+            <motion.div animate={ display ? { x: [-200,0], opacity: [0,1] } : {} } transition={{ duration: 3 }} className="opacity-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-auto px-6 md:px-40 py-10 md:py-20">
                 <div className="col-span-full mb-4 text-4xl font-bold">Projects</div>
                 {projects.map((project, index) => (
-                    <div key={index} className="bg-white p-4 shadow-md rounded-md">
+                    <motion.div whileHover={{ y: -10 }} key={index} className="bg-white p-4 shadow-md rounded-md">
                     <h2 className="text-xl font-bold mb-2">{project.name}</h2>
                     <p className="text-gray-600 mb-4">{project.description}</p>
                     <ul className="mb-4">
@@ -25,9 +49,9 @@ export default function Carousel() {
                         </div>
                         ))}
                     </div>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </section>
       );    
 }
